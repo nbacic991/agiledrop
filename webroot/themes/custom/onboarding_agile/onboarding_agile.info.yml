@@ -1,5 +1,5 @@
 # Theme information
-name: Kickstarter
+name: Onboarding Agiledrop
 type: theme
 base theme: classy
 description: Drupal theme files to quickly kickstart a new theme development.
@@ -8,8 +8,8 @@ version: 1.x
 
 # Include libraries
 libraries:
-  - kickstarter/global-css
-  - kickstarter/global-js
+  - onboarding_agile/global-css
+  - onboarding_agile/global-js
 
 # Regions
 regions:
