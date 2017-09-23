@@ -5,6 +5,16 @@
 //
 // ========================================
 
-.front {
-
+.region-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  #block-onboarding-agile-content {
+    flex-basis: 55%;
+  }
+  #block-introservices {
+    flex-basis: 40%;
+  }
 }
