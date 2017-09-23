@@ -197,3 +197,69 @@
     }
   }
 }
+
+/**************
+ *
+ * Region: Featured Events
+ *
+ **************/
+.site-footer {
+  padding-top: 50px;
+  .site-footer__top {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    border-top: 1px solid rgb(221, 231, 233);
+    border-bottom: 1px solid rgb(221, 231, 233);
+    display: flex;
+    flex-wrap: wrap;
+    .region-footer-first,
+    .region-footer-second,
+    .region-footer-third,
+    .region-footer-fourth {
+      flex-basis: 25%;
+      h2 {
+        margin-top: 0;
+        font-size: 25px;
+      }
+    }
+    .region-footer-second {
+      .menu {
+        margin: 0;
+        a {
+          color: rgb(85, 89, 95);
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+    .region-footer-third {
+      p {
+        font-size: 15px;
+        color: rgb(85, 89, 95);
+        span {
+          color: #000;
+        }
+      }
+    }
+    .region-footer-fourth {
+      input[type='email'] {
+        width: 80%;
+        border: 1px solid rgb(221, 231, 233);
+        background-color: #fff;
+      }
+      input[type='submit'] {
+        background-color: rgb(41, 193, 225);
+        color: #fff;
+        padding: 10px 5px;
+        border: 0;
+      }
+    }
+  }
+  .site-footer__bottom {
+    text-align: center;
+  }
+}
