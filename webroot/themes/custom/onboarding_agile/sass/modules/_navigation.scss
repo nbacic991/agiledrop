@@ -5,6 +5,65 @@
 //
 // ========================================
 
-.navigation {
 
+/**************
+ *
+ * Region: Main navigation
+ *
+ **************/
+.navigation {
+  .region-primary-menu {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    #block-onboarding-agile-branding {
+      flex-basis: 20%;
+      .site-name {
+        display: none;
+      }
+    }
+    #block-onboarding-agile-main-menu {
+      flex-basis: 60%;
+      margin: auto;
+      .menu {
+        margin: 0;
+        text-align: center;
+        li {
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          text-transform: uppercase;
+          a {
+            padding: 0 10px;
+            text-decoration: none;
+            color: rgb(85, 89, 95);
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+    #block-onboarding-agile-account-menu {
+      flex-basis: 20%;
+      .menu {
+        text-align: center;
+        li {
+          text-transform: uppercase;
+          display: inline-block;
+          a {
+            text-decoration: none;
+            background-color: rgb(41, 193, 225);
+            border-radius: 20px;
+            padding: 10px 25px;
+            color: #fff;
+            &:hover {
+              background-color: rgb(23, 113, 132);
+            }
+          }
+        }
+      }
+    }
+  }
 }
