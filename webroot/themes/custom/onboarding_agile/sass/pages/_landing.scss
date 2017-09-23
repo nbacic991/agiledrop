@@ -5,6 +5,11 @@
 //
 // ========================================
 
+/**************
+ *
+ * Region: Content
+ *
+ **************/
 .region-content {
   width: 80%;
   margin: auto;
@@ -16,5 +21,179 @@
   }
   #block-introservices {
     flex-basis: 40%;
+  }
+}
+
+/**************
+ *
+ * Region: Featured Events
+ *
+ **************/
+.featured-events {
+  background-color: rgb(221, 231, 233);
+  .region-featured-one {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    #block-latestevents {
+      padding-bottom: 30px;
+      p:nth-child(1) {
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 0;
+        margin: 0;
+      }
+      p:nth-child(2) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .view-id-latest_events {
+      width: 100%;
+      .view-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .views-row {
+          background-color: #fff;
+          width: 22%;
+          .views-field-title {
+            width: 80%;
+            margin: auto;
+            padding: 10px 0;
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+          }
+          .views-field-field-start-date {
+            width: 80%;
+            margin: auto;
+            padding: 0 0 50px 0;
+            time {
+              color: rgb(247, 147, 29);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**************
+ *
+ * Region: Featured Companies
+ *
+ **************/
+.featured-companies {
+  .region-featured-two {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(221, 231, 233);
+    #block-featuredcompanies {
+      padding: 30px 0;
+      p:nth-child(1) {
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 0;
+        margin: 0;
+      }
+      p:nth-child(2) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .block-views-blockfeatured-companies-block-1 {
+      .view-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        .views-row {
+          flex-basis: 33%;
+          padding: 10px;
+          .views-field-title {
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+          }
+          .views-field-field-company-description {
+            font-size: 13px;
+          }
+          .views-field-field-company-logo {
+            float: left;
+            padding-right: 10px;
+          }
+        }
+      }
+      .more-link {
+        text-align: center;
+        text-transform: uppercase;
+        a {
+          text-decoration: none;
+          color: #fff;
+          padding: 5px 10px;
+          background-color: rgb(41, 193, 225);
+          border-radius: 20px;
+          &:hover {
+            background-color: rgb(23, 113, 132);
+          }
+        }
+      }
+    }
+  }
+}
+
+/**************
+ *
+ * Region: Free Services
+ *
+ **************/
+.featured-service {
+  .region-featured-three {
+    width: 80%;
+    margin: auto;
+    #block-onemonthfreeservice {
+      .field--name-body {
+        text-align: center;
+        p:nth-child(1) {
+          margin-bottom: 0;
+          font-size: 40px;
+          span {
+            color: rgb(247, 147, 29);
+          }
+        }
+        p:nth-child(3),
+        p:nth-child(4){
+          display: inline-block;
+        }
+        p:nth-child(3) {
+          a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: rgb(41, 193, 225);
+            &:hover {
+              background-color: rgb(23, 113, 132);
+            }
+          }
+        }
+        p:nth-child(4){
+          a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: rgb(247, 147, 29);
+            &:hover {
+              background-color: rgb(165, 98, 18);
+            }
+          }
+        }
+      }
+    }
   }
 }
