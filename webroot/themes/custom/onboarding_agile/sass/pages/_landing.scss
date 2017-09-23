@@ -5,6 +5,11 @@
 //
 // ========================================
 
+/**************
+ *
+ * Region: Content
+ *
+ **************/
 .region-content {
   width: 80%;
   margin: auto;
@@ -16,5 +21,61 @@
   }
   #block-introservices {
     flex-basis: 40%;
+  }
+}
+
+/**************
+ *
+ * Region: Featured Events
+ *
+ **************/
+.featured-events {
+  background-color: rgb(221, 231, 233);
+  .region-featured-one {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    #block-latestevents {
+      padding-bottom: 30px;
+      p:nth-child(1) {
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 0;
+        margin: 0;
+      }
+      p:nth-child(2) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .view-id-latest_events {
+      width: 100%;
+      .view-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .views-row {
+          background-color: #fff;
+          width: 22%;
+          .views-field-title {
+            width: 80%;
+            margin: auto;
+            padding: 10px 0;
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+          }
+          .views-field-field-start-date {
+            width: 80%;
+            margin: auto;
+            padding: 0 0 50px 0;
+            time {
+              color: rgb(247, 147, 29);
+            }
+          }
+        }
+      }
+    }
   }
 }
