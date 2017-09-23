@@ -79,3 +79,69 @@
     }
   }
 }
+
+/**************
+ *
+ * Region: Featured Companies
+ *
+ **************/
+.featured-companies {
+  .region-featured-two {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(221, 231, 233);
+    #block-featuredcompanies {
+      padding: 30px 0;
+      p:nth-child(1) {
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 0;
+        margin: 0;
+      }
+      p:nth-child(2) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .block-views-blockfeatured-companies-block-1 {
+      .view-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        .views-row {
+          flex-basis: 33%;
+          padding: 10px;
+          .views-field-title {
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+          }
+          .views-field-field-company-description {
+            font-size: 13px;
+          }
+          .views-field-field-company-logo {
+            float: left;
+            padding-right: 10px;
+          }
+        }
+      }
+      .more-link {
+        text-align: center;
+        text-transform: uppercase;
+        a {
+          text-decoration: none;
+          color: #fff;
+          padding: 5px 10px;
+          background-color: rgb(41, 193, 225);
+          border-radius: 20px;
+          &:hover {
+            background-color: rgb(23, 113, 132);
+          }
+        }
+      }
+    }
+  }
+}
