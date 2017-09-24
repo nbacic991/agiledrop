@@ -21,6 +21,75 @@
   }
   #block-introservices {
     flex-basis: 40%;
+    span {
+      font-size: 15px;
+      color: #000;
+    }
+    p {
+      padding: 0 0 40px 70px;
+      font-size: 11px;
+      color: rgb(85, 89, 95);
+    }
+    p:nth-child(1) {
+      position: relative;
+      span {
+        &::before {
+          font-family: FontAwesome;
+          font-size: 40px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: "\f080";
+          padding: 5px;
+          margin-right: 20px;
+          background-color: rgb(221, 231, 233);
+        }
+        &:hover::before {
+          background-color: orange;
+          color: #fff;
+        }
+      }
+    }
+    p:nth-child(2) {
+      position: relative;
+      span {
+        &::before {
+          font-family: FontAwesome;
+          font-size: 40px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: "\f080";
+          margin-right: 20px;
+          padding: 5px;
+          background-color: rgb(221, 231, 233);
+        }
+        &:hover::before {
+          background-color: orange;
+          color: #fff;
+        }
+      }
+    }
+    p:nth-child(3) {
+      position: relative;
+      span {
+        &::before {
+          font-family: FontAwesome;
+          font-size: 40px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: "\f080";
+          margin-right: 20px;
+          padding: 5px;
+          background-color: rgb(221, 231, 233);
+        }
+        &:hover::before {
+          background-color: orange;
+          color: #fff;
+        }
+      }
+    }
   }
 }
 
