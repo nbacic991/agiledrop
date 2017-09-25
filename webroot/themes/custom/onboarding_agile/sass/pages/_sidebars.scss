@@ -1,0 +1,35 @@
+.region-sidebar-second {
+  #block-eventstitle {
+    margin-bottom: 20px;
+    .field--name-body {
+      p {
+        margin-top: 0;
+        &:nth-child(1) {
+          font-size: 30px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .view-id-events_by_company {
+    .views-field-title,
+    .views-field-field-start-date,
+    .views-field-field-event-image {
+      padding-left: 20px;
+    }
+    .views-field-title {
+      border-left: 5px solid rgb(41, 193, 225);
+      padding-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: rgb(85, 89, 95);
+      }
+    }
+    .views-field-field-start-date {
+      padding-bottom: 5px;
+      time {
+        color: rgb(247, 147, 29);
+      }
+    }
+  }
+}

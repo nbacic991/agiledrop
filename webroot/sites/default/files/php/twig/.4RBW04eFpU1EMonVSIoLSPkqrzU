@@ -93,7 +93,7 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
         }
         // line 69
         echo "
-      <div class=\"layout-page-content\">
+      <div class=\"page-content\">
           ";
         // line 71
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
@@ -290,7 +290,7 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
         </aside>
       {% endif %}
 
-      <div class=\"layout-page-content\">
+      <div class=\"page-content\">
           {{ page.content }}
       </div>{# /.layout-content #}
 
