@@ -339,15 +339,18 @@
     }
     .region-footer-fourth {
       input[type='email'] {
+        float: left;
         width: 80%;
+        margin-top: 16px;
+        padding: 10px 20px;
         border: 1px solid rgb(221, 231, 233);
         background-color: #fff;
       }
       input[type='submit'] {
         background-color: rgb(41, 193, 225);
         color: #fff;
-        padding: 10px 5px;
-        border: 0;
+        padding: 11px 10px;
+        border: none;
       }
     }
   }
