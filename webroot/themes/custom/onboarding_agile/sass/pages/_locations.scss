@@ -1,0 +1,66 @@
+// ========================================
+//
+// @file _locations.scss
+// Companies page specific styling
+//
+// ========================================
+#block-findlocations {
+  margin-bottom: 30px;
+  p {
+    text-transform: uppercase;
+    &:nth-child(1) {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
+
+#block-onboarding-agile-content {
+  .view-id-locations {
+    .view-content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      .views-row {
+        padding-bottom: 50px;
+        text-align: left;
+        background-color: rgb(221, 231, 233);
+        img{
+          width: 100%;
+          padding-bottom: 10px;
+        }
+        .item-list ul li {
+          list-style-type: none;
+        }
+        .item-list li:nth-child(1){
+          font-size: 14px;
+        }
+        .item-list li:nth-child(2){
+          font-size: 14px;
+          color: rgb(247, 147, 29);
+        }
+        .views-field-title {
+          width: 80%;
+          margin: auto;
+          a {
+            font-size: 13px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(85, 89, 95);
+          }
+        }
+        .views-field-field-location-subtitle {
+          width: 80%;
+          margin: auto;
+          color: rgb(247, 147, 29);
+        }
+      }
+    }
+  }
+}
