@@ -163,6 +163,26 @@
     margin: auto;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(221, 231, 233);
+    position: relative;
+    &::before {
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 70px solid rgb(41, 193, 225);
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 70px;
+      z-index: 1;
+    }
+    &::after {
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid rgb(247, 147, 29);
+      content: "";
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
     #block-featuredcompanies {
       padding: 30px 0;
       p:nth-child(1) {
@@ -333,5 +353,23 @@
   }
   .site-footer__bottom {
     text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+    &::before {
+      content: "";
+      border-bottom: 200px solid rgb(41, 193, 225);
+      border-left: 250px solid transparent;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      border-bottom: 200px solid rgb(247, 147, 29);
+      border-right: 250px solid transparent;
+      bottom: 85px;
+      left: 0;
+    }
   }
 }
