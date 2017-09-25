@@ -74,3 +74,150 @@
     }
   }
 }
+
+/**************
+ *
+ * Single company page
+ *
+ **************/
+.region-content {
+  .page-title {
+    border-bottom: 1px solid rgb(221, 231, 233);
+  }
+  .node__content {
+    .field--name-field-company-logo {
+      float: left;
+      padding-right: 20px;
+    }
+    .field--name-field-company-description {
+      padding-bottom: 50px;
+    }
+    .field--name-field-company-industry,
+    .field--name-field-company-website,
+    .field--name-field-company-phone,
+    .field--name-field-company-mail,
+    .field--name-field-company-address {
+      border: 1px solid rgb(221, 231, 233);
+      &:hover {
+        border-color: rgb(247, 147, 29);
+      }
+    }
+    .field--name-field-company-industry {
+      display: inline-block;
+      width: calc(50% - 4px);
+      height: 87px;
+      border: 1px solid rgb(221, 231, 233);
+      padding: 25px;
+      margin-bottom: 30px;
+      &::before {
+        content: url('/themes/custom/onboarding_agile/assets/images/icons/data-icon.png');
+        padding-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        padding-left: 10px;
+        border-left: 5px solid rgb(41, 193, 225);
+        &:hover {
+          border-left: 5px solid rgb(247, 147, 29);
+        }
+      }
+    }
+    .field--name-field-company-website {
+      display: inline-block;
+      width: calc(50% - 4px);
+      height: 87px;
+      border: 1px solid rgb(221, 231, 233);
+      padding: 25px;
+      margin-bottom: 30px;
+      &::before {
+        content: url('/themes/custom/onboarding_agile/assets/images/icons/web-icon.png');
+        padding-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        padding-left: 10px;
+        border-left: 5px solid rgb(41, 193, 225);
+        &:hover {
+          border-left: 5px solid rgb(247, 147, 29);
+        }
+      }
+    }
+    .field--name-field-company-phone {
+      display: inline-block;
+      width: calc(50% - 4px);
+      height: 87px;
+      border: 1px solid rgb(221, 231, 233);
+      padding: 25px;
+      margin-bottom: 30px;
+      &::before {
+        content: url('/themes/custom/onboarding_agile/assets/images/icons/phone-icon.png');
+        padding-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        padding-left: 10px;
+        border-left: 5px solid rgb(41, 193, 225);
+        &:hover {
+          border-left: 5px solid rgb(247, 147, 29);
+        }
+      }
+    }
+    .field--name-field-company-mail {
+      display: inline-block;
+      width: calc(50% - 4px);
+      height: 87px;
+      border: 1px solid rgb(221, 231, 233);
+      padding: 25px;
+      margin-bottom: 30px;
+      &::before {
+        content: url('/themes/custom/onboarding_agile/assets/images/icons/mail-icon.png');
+        padding-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        padding-left: 10px;
+        border-left: 5px solid rgb(41, 193, 225);
+        &:hover {
+          border-left: 5px solid rgb(247, 147, 29);
+        }
+      }
+    }
+    .field--name-field-company-address {
+      display: flex;
+      &::before {
+        content: url('/themes/custom/onboarding_agile/assets/images/icons/address-icon.png');
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .simple-gmap-address {
+        border-left: 5px solid #29c1e1;
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20%;
+        height: 20%;
+        margin: auto;
+        &:hover {
+          border-left: 5px solid rgb(247, 147, 29);
+        }
+      }
+      iframe {
+        padding: 2px 0 2px 10px;
+        order: 1;
+      }
+    }
+  }
+}
