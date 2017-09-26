@@ -341,12 +341,16 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 5px;
         margin: 0;
-        a {
-          color: rgb(85, 89, 95);
-          text-decoration: none;
-          text-transform: uppercase;
-          &:hover {
-            color: #000;
+        .menu-item {
+          margin-bottom: 10px;
+          a {
+            color: rgb(85, 89, 95);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            &:hover {
+              color: #000;
+            }
           }
         }
       }
