@@ -18,3 +18,36 @@ function onboarding_agile_preprocess_html(&$variables) {
         $variables['attributes']['class'][] = 'sidebar-none';
     }
 }
+
+
+/**
+ * @param $form
+ * @param $form_state
+ */
+function onboarding_agile_form_views_exposed_form_alter(&$form, &$form_state) {
+    //Got the Form Id by using inspect element/Firebug
+    if($form["#id"] == 'views-exposed-form-events-filter-page-1'){
+        //field_event_type_target_id is the Filter Identifier Key
+        $form['field_event_target_id']['#options']["All"] = 'FILTER BY EVENT TYPE';
+    }
+    if($form["#id"] == 'views-exposed-form-locations-filter-page-1'){
+        //field_equipment_target_id is the Filter Identifier Key
+        $form['field_equipment_target_id']['#options']["All"] = 'FILTER BY EQUIPMENT';
+    }
+    if($form["#id"] == 'views-exposed-form-company-filter-page-company-filter'){
+        //field_industry_target_id is the Filter Identifier Key
+        $form['field_company_industry_target_id']['#options']["All"] = 'FILTER BY INDUSTRY';
+    }
+}
+
+function onboarding_agile_form_alter(&$form, &$form_state) {
+    if ($form["#id"] == 'views-exposed-form-events-filter-page-1') {
+        $form['title']['#attributes']['placeholder'] = t('SEARCH BY TITLE');
+    }
+    if ($form["#id"] == 'views-exposed-form-locations-filter-page-1') {
+        $form['title']['#attributes']['placeholder'] = t('SEARCH BY TITLE');
+    }
+    if ($form["#id"] == 'views-exposed-form-company-filter-page-company-filter') {
+        $form['title']['#attributes']['placeholder'] = t('SEARCH BY TITLE');
+    }
+}
