@@ -337,6 +337,9 @@
     }
     .region-footer-second {
       .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5px;
         margin: 0;
         a {
           color: rgb(85, 89, 95);
