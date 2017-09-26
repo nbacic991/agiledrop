@@ -13,20 +13,46 @@
     margin: auto;
     display: flex;
     #block-locations {
-      flex-basis: 30%;
+      flex-basis: 25%;
       .field--name-body {
         margin-top: 10px;
-        padding-left: 50px;
-        border-left: 5px solid orange;
+        padding-left: 40px;
+        border-left: 5px solid rgb(247, 147, 29);
+        position: relative;
+        &::after {
+          position: absolute;
+          content:':';
+          color: #fff;
+          right: 10px;
+          top: 0;
+          font-size: 30px;
+        }
         p {
           margin: 0;
           padding: 0;
+          color: #fff;
+          span {
+            background-color: rgb(247, 147, 29);
+          }
         }
       }
     }
     .block-views-exposed-filter-blocklocations-filter-page-1 {
       flex-basis: 70%;
       display: inline-block;
+      input[type="text"],
+      select {
+        height: 2em;
+      }
+      input[type="text"]{
+        border: 0;
+        background-color: $color-white;
+        background-image: none;
+      }
+      select {
+        border: 0;
+        background-color: $color-white;
+      }
       .form--inline {
         .form-actions {
           clear: none;
