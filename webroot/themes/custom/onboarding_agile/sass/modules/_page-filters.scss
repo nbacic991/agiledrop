@@ -1,0 +1,93 @@
+// ========================================
+//
+// @file _page-filters.scss
+// All the filter elements
+//
+// ========================================
+
+.exposed-filters {
+  width: 100%;
+  background-color: gray;
+  height: 6em;
+  .region-header-bottom {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 15px;
+    #block-locations,
+    #block-events,
+    #block-companies {
+      flex-basis: 25%;
+      padding-top: 8px;
+      .field--name-body {
+        margin-top: 10px;
+        padding-left: 40px;
+        border-left: 5px solid rgb(247, 147, 29);
+        position: relative;
+        &::after {
+          position: absolute;
+          content:':';
+          color: #fff;
+          right: 10px;
+          top: 0;
+          font-size: 30px;
+        }
+        p {
+          margin: 0;
+          padding: 0;
+          color: #fff;
+          span {
+            font-size: 12px;
+            background-color: rgb(247, 147, 29);
+          }
+        }
+      }
+    }
+    .block-views-exposed-filter-blocklocations-filter-page-1,
+    .block-views-exposed-filter-blockevents-filter-page-1,
+    .block-views-exposed-filter-blockcompany-filter-page-company-filter {
+      flex-basis: 70%;
+      display: inline-block;
+      input[type="text"],
+      input[type="submit"],
+      select {
+        font-size: 14px;
+        height: 3.3em;
+      }
+      input[type="text"]{
+        border: 0;
+        background-color: $color-white;
+        background-image: none;
+        width: 300px;
+      }
+      input[type="submit"] {
+        text-transform: uppercase;
+        border: 0;
+        background-color: rgb(247, 147, 29);
+        color: #fff;
+        padding: 0 35px;
+        border-radius: 2px;
+      }
+      select {
+        width: 300px;
+        appearance: none;
+        line-height: 1;
+        border: 0;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right $color-white;
+        -webkit-appearance: none;
+        background-position-x: 270px;
+        //&:focus {
+        //  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_up.png) no-repeat right $color-white;
+        //  -webkit-appearance: none;
+        //  background-position-x: 190px;
+        //}
+      }
+      .form--inline {
+        .form-actions {
+          clear: none;
+        }
+      }
+    }
+  }
+}
+
