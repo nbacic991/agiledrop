@@ -24,7 +24,6 @@
       }
     }
     #block-onboarding-agile-main-menu {
-      flex-basis: 60%;
       margin: auto;
       .menu {
         margin: 0;
@@ -46,7 +45,6 @@
       }
     }
     #block-onboarding-agile-account-menu {
-      flex-basis: 20%;
       .menu {
         text-align: center;
         li {
@@ -56,7 +54,7 @@
             text-decoration: none;
             background-color: rgb(41, 193, 225);
             border-radius: 20px;
-            padding: 10px 25px;
+            padding: 5px 10px;
             color: #fff;
             &:hover {
               background-color: rgb(23, 113, 132);
