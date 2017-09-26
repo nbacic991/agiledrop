@@ -180,8 +180,7 @@
   .region-featured-two {
     width: 80%;
     margin: auto;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(221, 231, 233);
+    padding-bottom: 80px;
     position: relative;
     &::before {
       border-left: 40px solid transparent;
@@ -264,9 +263,12 @@
  **************/
 .featured-service {
   .region-featured-three {
+    border-top: 1px solid rgb(221, 231, 233);
+    border-bottom: 1px solid rgb(221, 231, 233);
     width: 80%;
     margin: auto;
     #block-onemonthfreeservice {
+      padding-bottom: 50px;
       .field--name-body {
         text-align: center;
         p:nth-child(1) {
@@ -320,7 +322,6 @@
     width: 80%;
     margin: auto;
     padding: 50px 0;
-    border-top: 1px solid rgb(221, 231, 233);
     border-bottom: 1px solid rgb(221, 231, 233);
     display: flex;
     flex-wrap: wrap;
