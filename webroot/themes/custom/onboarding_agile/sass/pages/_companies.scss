@@ -10,20 +10,6 @@
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    #block-findcompanies {
-      margin-bottom: 30px;
-      p {
-        text-transform: uppercase;
-        &:nth-child(1) {
-          font-size: 30px;
-          font-weight: 400;
-          margin-bottom: 0;
-        }
-        &:nth-child(2) {
-          margin-top: 0;
-        }
-      }
-    }
     #block-onboarding-agile-content {
       .view-id-company {
         margin: auto;

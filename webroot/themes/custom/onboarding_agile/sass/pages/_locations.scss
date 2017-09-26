@@ -4,21 +4,6 @@
 // Locations page specific styling
 //
 // ========================================
-#block-findlocations {
-  margin-bottom: 30px;
-  p {
-    text-transform: uppercase;
-    &:nth-child(1) {
-      font-size: 30px;
-      font-weight: 400;
-      margin-bottom: 0;
-    }
-    &:nth-child(2) {
-      margin-top: 0;
-    }
-  }
-}
-
 .view-id-locations {
   .view-content {
     width: 100%;
@@ -63,6 +48,11 @@
   }
 }
 
+/**************
+ *
+ * Single location page
+ *
+ **************/
 .node--type-location {
   .node__content {
     .field--name-field-location-image {

@@ -1,7 +1,7 @@
 <?php
 
-/* themes/custom/onboarding_agile/templates/node/page.html.twig */
-class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d569a8 extends Twig_Template
+/* themes/custom/onboarding_agile/templates/node/page--locations.html.twig */
+class __TwigTemplate_4357e470ead7c3bdf2d198e26edaa1a7946abbbbb5a68328b6e36f713aaefad0 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -96,7 +96,7 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
         }
         // line 72
         echo "
-      <div class=\"page-content\">
+      <div class=\"locations-content\">
           ";
         // line 74
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
@@ -209,7 +209,7 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
 
     public function getTemplateName()
     {
-        return "themes/custom/onboarding_agile/templates/node/page.html.twig";
+        return "themes/custom/onboarding_agile/templates/node/page--locations.html.twig";
     }
 
     public function isTraitable()
@@ -296,7 +296,7 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
         </aside>
       {% endif %}
 
-      <div class=\"page-content\">
+      <div class=\"locations-content\">
           {{ page.content }}
       </div>{# /.layout-content #}
 

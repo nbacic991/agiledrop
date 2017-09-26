@@ -1,7 +1,7 @@
 <?php
 
-/* themes/custom/onboarding_agile/templates/node/page.html.twig */
-class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d569a8 extends Twig_Template
+/* themes/custom/onboarding_agile/templates/node/page--events.html.twig */
+class __TwigTemplate_2d76a02cda918e8f1fb115b05fa50cba0c5266e97e3ce90315fd42330e2c86f8 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,7 +15,7 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 67);
+        $tags = array("if" => 66);
         $filters = array();
         $functions = array();
 
@@ -72,144 +72,130 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header_bottom", array()), "html", null, true));
         echo "
   </div>
-
     ";
-        // line 62
+        // line 61
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "help", array()), "html", null, true));
         echo "
 
   <main role=\"main\">
     <a id=\"main-content\" tabindex=\"-1\"></a>";
-        // line 66
+        // line 65
         echo "    <section class=\"main-section\">
-      ";
-        // line 67
+     ";
+        // line 66
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())) {
+            // line 67
+            echo "         <aside class=\"layout-sidebar-first\" role=\"complementary\">
+             ";
             // line 68
-            echo "        <aside class=\"layout-sidebar-first\" role=\"complementary\">
-            ";
-            // line 69
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()), "html", null, true));
             echo "
-        </aside>
-      ";
+         </aside>
+     ";
         }
-        // line 72
+        // line 71
         echo "
-      <div class=\"page-content\">
+      <div class=\"events-content\">
           ";
-        // line 74
+        // line 73
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
         echo "
       </div>";
-        // line 76
+        // line 75
         echo "
-      ";
-        // line 77
-        if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())) {
-            // line 78
-            echo "        <aside class=\"layout-sidebar-second\" role=\"complementary\">
-          ";
-            // line 79
-            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()), "html", null, true));
-            echo "
-        </aside>
-      ";
-        }
-        // line 82
-        echo "    </section>
+    </section>
   </main>
 
     ";
-        // line 85
+        // line 79
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_one", array())) {
-            // line 86
+            // line 80
             echo "      <div class=\"featured-events\" role=\"complementary\">
           ";
-            // line 87
+            // line 81
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_one", array()), "html", null, true));
             echo "
       </div>
     ";
         }
-        // line 90
+        // line 84
         echo "    ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_two", array())) {
-            // line 91
+            // line 85
             echo "      <div class=\"featured-companies\" role=\"complementary\">
           ";
-            // line 92
+            // line 86
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_two", array()), "html", null, true));
             echo "
       </div>
     ";
         }
-        // line 95
+        // line 89
         echo "    ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_three", array())) {
-            // line 96
+            // line 90
             echo "      <div class=\"featured-service\" role=\"complementary\">
           ";
-            // line 97
+            // line 91
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_three", array()), "html", null, true));
             echo "
       </div>
     ";
         }
-        // line 100
+        // line 94
         echo "
   <footer class=\"site-footer\">
     <div class=\"layout-container\">
         ";
-        // line 103
+        // line 97
         if (((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_second", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_third", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fourth", array()))) {
-            // line 104
+            // line 98
             echo "          <div class=\"site-footer__top clearfix\">
               ";
-            // line 105
+            // line 99
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()), "html", null, true));
             echo "
               ";
-            // line 106
+            // line 100
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_second", array()), "html", null, true));
             echo "
               ";
-            // line 107
+            // line 101
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_third", array()), "html", null, true));
             echo "
               ";
-            // line 108
+            // line 102
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fourth", array()), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 111
+        // line 105
         echo "        ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fifth", array())) {
-            // line 112
+            // line 106
             echo "          <div class=\"site-footer__bottom\">
               ";
-            // line 113
+            // line 107
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fifth", array()), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 116
+        // line 110
         echo "    </div>
   </footer>
 
 
 </div>";
-        // line 121
+        // line 115
         echo "
 ";
     }
 
     public function getTemplateName()
     {
-        return "themes/custom/onboarding_agile/templates/node/page.html.twig";
+        return "themes/custom/onboarding_agile/templates/node/page--events.html.twig";
     }
 
     public function isTraitable()
@@ -219,7 +205,7 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
 
     public function getDebugInfo()
     {
-        return array (  206 => 121,  200 => 116,  194 => 113,  191 => 112,  188 => 111,  182 => 108,  178 => 107,  174 => 106,  170 => 105,  167 => 104,  165 => 103,  160 => 100,  154 => 97,  151 => 96,  148 => 95,  142 => 92,  139 => 91,  136 => 90,  130 => 87,  127 => 86,  125 => 85,  120 => 82,  114 => 79,  111 => 78,  109 => 77,  106 => 76,  102 => 74,  98 => 72,  92 => 69,  89 => 68,  87 => 67,  84 => 66,  78 => 62,  72 => 59,  66 => 56,  59 => 52,  55 => 51,  52 => 50,  47 => 47,  43 => 45,);
+        return array (  192 => 115,  186 => 110,  180 => 107,  177 => 106,  174 => 105,  168 => 102,  164 => 101,  160 => 100,  156 => 99,  153 => 98,  151 => 97,  146 => 94,  140 => 91,  137 => 90,  134 => 89,  128 => 86,  125 => 85,  122 => 84,  116 => 81,  113 => 80,  111 => 79,  105 => 75,  101 => 73,  97 => 71,  91 => 68,  88 => 67,  86 => 66,  83 => 65,  77 => 61,  72 => 59,  66 => 56,  59 => 52,  55 => 51,  52 => 50,  47 => 47,  43 => 45,);
     }
 
     public function getSource()
@@ -284,27 +270,21 @@ class __TwigTemplate_a13563e2eba9c4c705f85a68b84ae48cc898f07f4912e624709a2ec464d
   <div class=\"exposed-filters\">
       {{ page.header_bottom }}
   </div>
-
     {{ page.help }}
 
   <main role=\"main\">
     <a id=\"main-content\" tabindex=\"-1\"></a>{# link is in html.html.twig #}
     <section class=\"main-section\">
-      {% if page.sidebar_first %}
-        <aside class=\"layout-sidebar-first\" role=\"complementary\">
-            {{ page.sidebar_first }}
-        </aside>
-      {% endif %}
+     {% if page.sidebar_first %}
+         <aside class=\"layout-sidebar-first\" role=\"complementary\">
+             {{ page.sidebar_first }}
+         </aside>
+     {% endif %}
 
-      <div class=\"page-content\">
+      <div class=\"events-content\">
           {{ page.content }}
       </div>{# /.layout-content #}
 
-      {% if page.sidebar_second %}
-        <aside class=\"layout-sidebar-second\" role=\"complementary\">
-          {{ page.sidebar_second }}
-        </aside>
-      {% endif %}
     </section>
   </main>
 

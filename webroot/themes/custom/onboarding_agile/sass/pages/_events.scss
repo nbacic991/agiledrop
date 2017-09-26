@@ -1,0 +1,221 @@
+// ========================================
+//
+// @file _events.scss
+// Events page specific styling
+//
+// ========================================
+
+
+.region-content {
+  .view-id-events {
+    .view-content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 5px;
+      .views-row:nth-child(1) {
+        .views-field-field-event-image {
+          ::before {
+            border-bottom: 30px solid rgb(221, 231, 233);
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+          }
+        }
+      }
+      .views-row:nth-child(2) {
+        .views-field-field-event-image {
+          order: 1;
+          ::before {
+            border-top: 30px solid rgb(221, 231, 233);
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 40%;
+          }
+        }
+      }
+      .views-row:nth-child(3) {
+        .views-field-field-event-image {
+          ::before {
+            border-bottom: 30px solid rgb(221, 231, 233);
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+          }
+        }
+      }
+      .views-row:nth-child(4) {
+        .views-field-field-event-image {
+          ::before {
+            border-bottom: 30px solid rgb(221, 231, 233);
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+          }
+        }
+      }
+      .views-row:nth-child(5) {
+        .views-field-field-event-image {
+          order: 1;
+          ::before {
+            border-top: 30px solid rgb(221, 231, 233);
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 40%;
+          }
+        }
+      }
+      .views-row:nth-child(6) {
+        .views-field-field-event-image {
+          ::before {
+            border-bottom: 30px solid rgb(221, 231, 233);
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+          }
+        }
+      }
+      .views-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: rgb(221, 231, 233);
+        .views-field-field-event-image {
+          position: relative;
+          display: block;
+        }
+        .views-field-field-start-date {
+          font-size: 40px;
+          margin-top: 20px;
+          display: block;
+          width: 100%;
+        }
+        .views-field-field-start-date-1 {
+          margin-top: 20px;
+          display: block;
+          width: 100%;
+        }
+        .views-field-title {
+          display: block;
+          margin: 20px;
+          a {
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(85, 89, 95);
+          }
+        }
+        .views-field-body {
+          display: block;
+          padding: 10px;
+          color: rgb(85, 89, 95);
+        }
+        .views-field-view-node {
+          display: block;
+          margin: 20px 0;
+          color: rgb(85, 89, 95);
+          a {
+            background-color: rgb(41, 193, 225);
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            &:hover {
+              background-color: #0f74a8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**************
+ *
+ * Single event page
+ *
+ **************/
+
+.node--type-event {
+  .field--name-field-event-image {
+    text-align: center;
+    margin-top: 100px;
+    img {
+      margin: auto;
+      border-radius: 50%;
+    }
+  }
+  .field--name-field-event,
+  .field--name-field-event-website {
+    margin: 30px 0;
+    text-align: center;
+    a {
+      padding-left: 20px;
+      text-decoration: none;
+      color: #0f0f0f;
+      border-left: 2px solid rgb(41, 193, 225);
+    }
+  }
+  h2 {
+    text-align: center;
+    a {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 30px;
+    }
+  }
+  .field--name-field-start-date {
+    width: 45%;
+    font-size: 15px;
+    display: inline-block;
+    border-left: 2px solid rgb(247, 147, 29);
+    padding-left: 20px;
+    margin-left: 70px;
+    .field__label {
+      font-weight: 400;
+    }
+    .field__item {
+      font-weight: 400;
+    }
+  }
+  .field--name-field-end-date {
+    width: 45%;
+    font-size: 15px;
+    display: inline-block;
+    border-left: 2px solid rgb(41, 193, 225);
+    padding-left: 20px;
+    .field__label {
+      font-weight: 400;
+    }
+    .field__item {
+      font-weight: 400;
+    }
+  }
+  .field--name-field-description {
+    margin-top: 30px;
+    text-align: justify;
+    p {
+      color: #55595f;
+      font-size: 15px;
+    }
+  }
+}

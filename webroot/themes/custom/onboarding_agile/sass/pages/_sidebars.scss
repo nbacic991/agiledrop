@@ -34,3 +34,78 @@
     }
   }
 }
+
+/**
+ * Organizer sidebar
+ **/
+.view-id-organizer {
+  padding: 20px;
+  border: 1px solid rgb(221, 231, 233);
+  margin-bottom: 20px;
+  .views-field-field-company-logo {
+    float: left;
+    margin-right: 15px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .views-field-title {
+    margin-bottom: 50px;
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #000;
+      border-left: 2px solid rgb(247, 147, 29);
+      padding-left: 10px;
+    }
+  }
+  .views-field-field-company-description {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .views-field-view-node {
+    text-align: right;
+    a {
+      color: rgb(247, 147, 29);
+      text-decoration: none;
+    }
+  }
+}
+
+.view-id-events_location {
+  padding: 20px;
+  border: 1px solid rgb(221, 231, 233);
+  margin-bottom: 20px;
+  .views-field-field-location-image {
+    float: left;
+    margin-right: 15px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .views-field-title {
+    margin-bottom: 40px;
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #000;
+      border-left: 2px solid rgb(41, 193, 225);
+      padding-left: 10px;
+    }
+  }
+  .views-field-field-location-desc {
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .views-field-view-node {
+    text-align: right;
+    a {
+      color: rgb(41, 193, 225);
+      text-decoration: none;
+    }
+  }
+}
