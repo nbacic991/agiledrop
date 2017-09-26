@@ -25,7 +25,7 @@
           p {
             &:nth-child(1) {
               font-size: 30px;
-              margin-bottom: 0;
+              margin: 0;
             }
             &:nth-child(2) {
               margin: 0 0 40px 0;
@@ -41,7 +41,7 @@
     #block-views-block-front-page-services-block-1 {
       flex-basis: 40%;
       .views-row {
-        padding-bottom: 10px;
+        padding-bottom: 35px;
       }
       span {
         font-size: 15px;
@@ -52,7 +52,7 @@
         font-size: 11px;
         color: rgb(85, 89, 95);
       }
-      p:nth-child(1) {
+      .views-row:nth-child(1) {
         position: relative;
         span {
           &::before {
@@ -61,7 +61,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            content: "\f080";
+            content: $fa-var-bar-chart;
             padding: 5px;
             margin-right: 20px;
             background-color: rgb(221, 231, 233);
@@ -72,7 +72,7 @@
           }
         }
       }
-      p:nth-child(2) {
+      .views-row:nth-child(2) {
         position: relative;
         span {
           &::before {
@@ -81,7 +81,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            content: "\f080";
+            content: $fa-var-clipboard;
             margin-right: 20px;
             padding: 5px;
             background-color: rgb(221, 231, 233);
@@ -92,16 +92,16 @@
           }
         }
       }
-      p:nth-child(3) {
+      .views-row:nth-child(3) {
         position: relative;
         span {
           &::before {
             font-family: FontAwesome;
-            font-size: 40px;
+            font-size: 50px;
             position: absolute;
             left: 0;
             top: 0;
-            content: "\f080";
+            content: $fa-var-black-tie;
             margin-right: 20px;
             padding: 5px;
             background-color: rgb(221, 231, 233);
