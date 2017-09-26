@@ -15,7 +15,7 @@ class __TwigTemplate_621ddd325b689429062f3eca7e4cd74073cbaacc01bc791dcc6d460705a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 72);
+        $tags = array("if" => 74);
         $filters = array();
         $functions = array();
 
@@ -66,114 +66,116 @@ class __TwigTemplate_621ddd325b689429062f3eca7e4cd74073cbaacc01bc791dcc6d460705a
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "html", null, true));
         echo "
   </header>
-    ";
-        // line 58
+  <div class=\"exposed-filters\">
+      ";
+        // line 59
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header_bottom", array()), "html", null, true));
         echo "
+  </div>
     ";
-        // line 59
+        // line 61
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "help", array()), "html", null, true));
         echo "
 
   <main role=\"main\">
     <a id=\"main-content\" tabindex=\"-1\"></a>";
-        // line 63
+        // line 65
         echo "    <section class=\"main-section\">
 
       <div class=\"companies-content\">
           ";
-        // line 66
+        // line 68
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
         echo "
       </div>";
-        // line 68
+        // line 70
         echo "
     </section>
   </main>
 
     ";
-        // line 72
+        // line 74
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_one", array())) {
-            // line 73
+            // line 75
             echo "      <div class=\"featured-events\" role=\"complementary\">
           ";
-            // line 74
+            // line 76
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_one", array()), "html", null, true));
             echo "
       </div>
     ";
         }
-        // line 77
+        // line 79
         echo "    ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_two", array())) {
-            // line 78
+            // line 80
             echo "      <div class=\"featured-companies\" role=\"complementary\">
           ";
-            // line 79
+            // line 81
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_two", array()), "html", null, true));
             echo "
       </div>
     ";
         }
-        // line 82
+        // line 84
         echo "    ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_three", array())) {
-            // line 83
+            // line 85
             echo "      <div class=\"featured-service\" role=\"complementary\">
           ";
-            // line 84
+            // line 86
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "featured_three", array()), "html", null, true));
             echo "
       </div>
     ";
         }
-        // line 87
+        // line 89
         echo "
   <footer class=\"site-footer\">
     <div class=\"layout-container\">
         ";
-        // line 90
+        // line 92
         if (((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_second", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_third", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fourth", array()))) {
-            // line 91
+            // line 93
             echo "          <div class=\"site-footer__top clearfix\">
               ";
-            // line 92
+            // line 94
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()), "html", null, true));
             echo "
               ";
-            // line 93
+            // line 95
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_second", array()), "html", null, true));
             echo "
               ";
-            // line 94
+            // line 96
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_third", array()), "html", null, true));
             echo "
               ";
-            // line 95
+            // line 97
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fourth", array()), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 98
+        // line 100
         echo "        ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fifth", array())) {
-            // line 99
+            // line 101
             echo "          <div class=\"site-footer__bottom\">
               ";
-            // line 100
+            // line 102
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_fifth", array()), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 103
+        // line 105
         echo "    </div>
   </footer>
 
 
 </div>";
-        // line 108
+        // line 110
         echo "
 ";
     }
@@ -190,7 +192,7 @@ class __TwigTemplate_621ddd325b689429062f3eca7e4cd74073cbaacc01bc791dcc6d460705a
 
     public function getDebugInfo()
     {
-        return array (  177 => 108,  171 => 103,  165 => 100,  162 => 99,  159 => 98,  153 => 95,  149 => 94,  145 => 93,  141 => 92,  138 => 91,  136 => 90,  131 => 87,  125 => 84,  122 => 83,  119 => 82,  113 => 79,  110 => 78,  107 => 77,  101 => 74,  98 => 73,  96 => 72,  90 => 68,  86 => 66,  81 => 63,  75 => 59,  71 => 58,  66 => 56,  59 => 52,  55 => 51,  52 => 50,  47 => 47,  43 => 45,);
+        return array (  179 => 110,  173 => 105,  167 => 102,  164 => 101,  161 => 100,  155 => 97,  151 => 96,  147 => 95,  143 => 94,  140 => 93,  138 => 92,  133 => 89,  127 => 86,  124 => 85,  121 => 84,  115 => 81,  112 => 80,  109 => 79,  103 => 76,  100 => 75,  98 => 74,  92 => 70,  88 => 68,  83 => 65,  77 => 61,  72 => 59,  66 => 56,  59 => 52,  55 => 51,  52 => 50,  47 => 47,  43 => 45,);
     }
 
     public function getSource()
@@ -252,7 +254,9 @@ class __TwigTemplate_621ddd325b689429062f3eca7e4cd74073cbaacc01bc791dcc6d460705a
   <header role=\"banner\">
       {{ page.header }}
   </header>
-    {{ page.header_bottom }}
+  <div class=\"exposed-filters\">
+      {{ page.header_bottom }}
+  </div>
     {{ page.help }}
 
   <main role=\"main\">
