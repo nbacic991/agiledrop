@@ -16,9 +16,9 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     #block-onboarding-agile-content {
       flex-basis: 55%;
+      margin-right: 50px;
       .view-id-frontpage {
         .views-field-body {
           margin-bottom: 30px;
@@ -180,7 +180,7 @@
   .region-featured-two {
     width: 80%;
     margin: auto;
-    padding-bottom: 80px;
+    padding: 50px 0 80px 0;
     position: relative;
     &::before {
       border-left: 40px solid transparent;
@@ -265,10 +265,10 @@
   .region-featured-three {
     border-top: 1px solid rgb(221, 231, 233);
     border-bottom: 1px solid rgb(221, 231, 233);
+    padding-bottom: 50px;
     width: 80%;
     margin: auto;
     #block-onemonthfreeservice {
-      padding-bottom: 50px;
       .field--name-body {
         text-align: center;
         p:nth-child(1) {
@@ -286,7 +286,7 @@
           a {
             color: #fff;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 5px 20px;
             border-radius: 20px;
             background-color: rgb(41, 193, 225);
             &:hover {
@@ -298,7 +298,7 @@
           a {
             color: #fff;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 5px 20px;
             border-radius: 20px;
             background-color: rgb(247, 147, 29);
             &:hover {
@@ -313,7 +313,7 @@
 
 /**************
  *
- * Region: Featured Events
+ * All footer regions
  *
  **************/
 .site-footer {
@@ -385,6 +385,9 @@
     text-align: center;
     position: relative;
     padding-bottom: 50px;
+    span {
+      color: rgb(85, 89, 95);
+    }
     &::before {
       content: "";
       border-bottom: 200px solid rgb(41, 193, 225);
