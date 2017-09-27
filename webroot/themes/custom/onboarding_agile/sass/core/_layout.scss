@@ -12,18 +12,19 @@
  ****
  **************/
 
-.sidebar-none .main-content{
+.sidebar-none .main-content {
   display: grid;
   grid-template-columns: 1fr;
 
 }
-.sidebar-second .main-section{
+.sidebar-second .main-section {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column-gap: 30px;
   max-width: 1200px;
   width: 100%;
   margin: auto;
+  margin-top: 50px;
 }
 .sidebar-first .main-section {
   display: grid;
@@ -32,6 +33,7 @@
   max-width: 1200px;
   width: 100%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .companies-content,

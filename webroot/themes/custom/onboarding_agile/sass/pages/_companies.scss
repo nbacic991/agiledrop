@@ -23,6 +23,7 @@
             &:last-child {
               margin-bottom: 0;
               padding-bottom: 0;
+              border: none;
             }
             .views-field-field-company-logo {
               width: 200px;
@@ -34,11 +35,14 @@
                 font-size: 20px;
                 color: #55595f;
                 text-decoration: none;
-                border-left: 2px solid rgb(41, 193, 225);
-                padding-left: 5px;
+                border-left: 5px solid rgb(247, 147, 29);
+                padding-left: 15px;
+                &:hover {
+                  border-color: rgb(41, 193, 225);
+                }
               }
             }
-            .views-field-body {
+            .views-field-field-company-description {
               font-size: 15px;
             }
             .views-field-view-node {
@@ -47,10 +51,10 @@
                 color: #FFF;
                 text-decoration: none;
                 padding: 10px 25px;
-                background-color: rgb(41, 193, 225);
+                background-color: rgb(247, 147, 29);
                 border-radius: 20px;
                 &:hover {
-                  background-color: rgb(247, 147, 29);
+                  background-color: rgb(41, 193, 225);
                 }
               }
             }
@@ -68,9 +72,11 @@
  **************/
 .region-content {
   .page-title {
+    padding-bottom: 30px;
     border-bottom: 1px solid rgb(221, 231, 233);
   }
   .node__content {
+    margin-bottom: 50px;
     .field--name-field-company-logo {
       float: left;
       padding-right: 20px;
