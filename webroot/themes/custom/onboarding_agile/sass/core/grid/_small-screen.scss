@@ -138,14 +138,18 @@
    **************/
   .layout-container {
     .region-header {
-      #block-companyheader {
+      #block-companyheader,
+      #block-locationsheader,
+      #block-eventheader {
         .field--name-body {
           p:nth-child(2) {
             margin-top: 2px;
             font-size: 1.3em;
           }
           p:nth-child(3) {
-            font-size: 0.8em;
+            font-size: 0.5em;
+            font-weight: 400;
+            width: 80%;
           }
         }
       }
@@ -154,7 +158,9 @@
       height: auto;
       .region-header-bottom {
         display: block;
-        #block-companies {
+        #block-companies,
+        #block-locations,
+        #block-events {
           text-align: center;
           .field--name-body::after {
             content:"";
@@ -172,7 +178,9 @@
             }
           }
         }
-        #block-exposedformcompany-filterpage-company-filter {
+        #block-exposedformcompany-filterpage-company-filter,
+        #block-exposedformlocations-filterpage-1,
+        #block-exposedformevents-filterpage-1 {
           width: 100%;
           form {
             text-align: center;
@@ -185,7 +193,9 @@
         }
       }
     }
-    .companies-content {
+    .companies-content,
+    .locations-content,
+    .events-content {
       .region-content {
         padding: 0 10px;
         .view-header {
@@ -271,4 +281,30 @@
     }
   }
 
+  /**************
+   *
+   * Events page
+   *
+   **************/
+  .layout-container {
+    .region-content {
+      .view-id-events {
+        .view-content {
+          display: block;
+          .views-row {
+            margin-bottom: 5px;
+            .views-field-field-description {
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /**************
+   *
+   * Single event page
+   *
+   **************/
 }
