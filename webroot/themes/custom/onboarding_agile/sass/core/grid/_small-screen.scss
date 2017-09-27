@@ -216,8 +216,8 @@
     }
   }
   /*
-     * Single company page
-     */
+   * Single company page
+   */
   .sidebar-second .main-section {
     display: block !important;
     padding: 0 10px;
@@ -307,4 +307,21 @@
    * Single event page
    *
    **************/
+  .sidebar-first .main-section {
+    display: block !important;
+    .region-content {
+      .node--type-event {
+        .field--name-field-start-date,
+        .field--name-field-end-date {
+          padding: 0;
+          display: block;
+          width: 60%;
+          margin: auto;
+        }
+        .field--name-field-description {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
 }
