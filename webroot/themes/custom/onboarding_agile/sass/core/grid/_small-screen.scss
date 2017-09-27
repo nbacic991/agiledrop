@@ -205,5 +205,70 @@
       }
     }
   }
+  /*
+     * Single company page
+     */
+  .sidebar-second .main-section {
+    display: block !important;
+    padding: 0 10px;
+    .region-content {
+      .node__content {
+        .field--name-field-company-industry,
+        .field--name-field-company-website,
+        .field--name-field-company-phone,
+        .field--name-field-company-mail {
+          display: block;
+          width: 100%;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+        .field--name-field-company-address::before {
+          content:"";
+        }
+        .field--name-field-company-address {
+          display: block;
+          iframe {
+            padding: 5px;
+            max-width: 522px;
+            width: 100%;
+          }
+          .simple-gmap-address {
+            width: 100%;
+            display: block;
+            text-align: center;
+            border: 0;
+            margin: 10px 0;
+            &:hover {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+    .region-sidebar-second {
+      text-align: center;
+      .view-id-events_by_company {
+        .views-field-title,
+        .views-field-field-start-date,
+        .views-field-field-event-image {
+          padding-left: 0;
+        }
+        .views-field-title {
+          border: 0;
+          a {
+            border-left: 5px solid #29c1e1;
+            padding-bottom: 5px;
+            padding-left: 10px;
+          }
+        }
+        .views-field-field-event-image {
+          margin-bottom: 10px;
+          img {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
 
 }
