@@ -33,6 +33,18 @@
     margin-bottom: 0;
   }
 }
+
+@media  (max-width: 480px) {
+  .caption {
+    p:nth-child(1) {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    p:nth-child(2) {
+      font-size: 13px;
+    }
+  }
+}
 .slick-dots {
   position: absolute;
   bottom: 5%;

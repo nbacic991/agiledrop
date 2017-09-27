@@ -9,6 +9,9 @@
 @import 'framework';
 @import 'system';
 
+// Import responsive behaviour
+@import 'small-screen';
+
 .container {
   @include container-fixed;
 

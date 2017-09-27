@@ -1,0 +1,133 @@
+// ========================================
+//
+// @file _small-screen.scss
+// Main grid classes
+//
+// ========================================
+
+/**************
+ *
+ *Front page
+ *
+ **************/
+
+@media  (max-width: 480px) {
+
+  .layout-container {
+    .highlighted {
+      .region-highlighted {
+        #block-onboardingheaderleft {
+          display: none;
+        }
+        #block-onboardingheaderright1 {
+          margin: auto;
+        }
+        #block-onboardingheaderright2 {
+          border-right: none;
+          margin: auto;
+        }
+      }
+    }
+    .navigation {
+      .region-primary-menu {
+        nav {
+          display: none;
+        }
+      }
+    }
+    .layout-page-content {
+      .region-content {
+        width: 90%;
+        display: block;
+        #block-onboarding-agile-content {
+          margin-right: 0;
+          .view-id-frontpage {
+            .views-field-body {
+              p:nth-child(1) {
+                font-size: 1.6em;
+              }
+              p:nth-child(2) {
+                margin-top: 5px;
+              }
+              p:nth-child(3) {
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+    .featured-events {
+      .region-featured-one {
+        .view-latest-events {
+          .view-content {
+            display: block;
+            .views-row {
+              width: 100%;
+              margin-bottom: 10px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .featured-companies {
+      .region-featured-two {
+        &::before {
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: 35px solid #29c1e1;
+          right: 50%;
+        }
+        &::after {
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          border-bottom: 60px solid rgb(247, 147, 29);
+          right: 40%;
+        }
+        .block-views-blockfeatured-companies-block-1 {
+          .view-content {
+            .views-row {
+              flex-basis: 100%;
+            }
+          }
+        }
+      }
+    }
+    .site-footer {
+      .site-footer__top {
+        padding: 0;
+        display: block;
+        text-align: center;
+        .region-footer-first,
+        .region-footer-second,
+        .region-footer-third,
+        .region-footer-fourth {
+          margin-bottom: 10px;
+        }
+        .region-footer-first {
+          display: none;
+        }
+        .region-footer-second {
+          .menu {
+            text-align: center;
+            display: inline-grid;
+            grid-column-gap: 20px;
+          }
+        }
+      }
+      .site-footer__bottom {
+        padding-bottom: 10px;
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
