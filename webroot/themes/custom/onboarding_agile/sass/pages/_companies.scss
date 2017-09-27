@@ -72,9 +72,11 @@
  **************/
 .region-content {
   .page-title {
+    padding-bottom: 30px;
     border-bottom: 1px solid rgb(221, 231, 233);
   }
   .node__content {
+    margin-bottom: 50px;
     .field--name-field-company-logo {
       float: left;
       padding-right: 20px;
