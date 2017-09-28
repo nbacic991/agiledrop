@@ -4,6 +4,91 @@
 // Main grid classes
 //
 // ========================================
+@media (max-width: 768px) {
+
+
+  //
+  //.navigation {
+  //  .menu--main {
+  //    .menu {
+  //      display: none;
+  //    }
+  //  }
+  //  &.expanded  {
+  //    .menu--main {
+  //      .menu {
+  //        display: block;
+  //      }
+  //    }
+  //  }
+  //}
+.navigation {
+  position: relative;
+  .region-primary-menu {
+    display: block !important;
+  }
+}
+  nav {
+    .menu {
+      display: none;
+    }
+    &.open {
+      .menu {
+        margin-top: 20px !important;
+        display: block !important;
+        li {
+          display: block !important;
+          padding-bottom: 10px !important;
+          a {
+            border-bottom: 2px solid black;
+          }
+          &:last-child {
+            padding-bottom: 0;
+            border: 0;
+          }
+          a {
+
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    cursor: pointer;
+    span {
+      display: block;
+      position: absolute;
+      height: 9px;
+      width: 100%;
+      background: rgb(41, 193, 225);
+      opacity: 1;
+      transition: .3s;
+      &:nth-child(2) {
+        top: 17px;
+      }
+      &:nth-child(3) {
+        top: 34px;
+      }
+    }
+    &.open {
+      cursor: pointer;
+      span {
+        background: rgb(247, 147, 29);
+        transform: rotate(180deg);
+        transition: .3s;
+      }
+    }
+  }
+
+}
 
 @media  (min-width: 480px) and (max-width: 768px) {
 
@@ -28,10 +113,9 @@
       }
     }
     .navigation {
+      position: relative;
       .region-primary-menu {
-        nav {
-          display: none;
-        }
+        display: block !important;
       }
     }
     .caption p:nth-child(1) {
