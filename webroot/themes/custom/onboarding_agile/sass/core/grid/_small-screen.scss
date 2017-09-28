@@ -341,4 +341,55 @@
       }
     }
   }
+
+  /**************
+   *
+   * Single location page
+   *
+   **************/
+  .layout-container {
+    .region-content {
+      .node__content {
+        .field--name-field-equipment,
+        .field--name-field-location-website,
+        .field--name-field-location-phone,
+        .field--name-field-location-email {
+          display: block;
+          width: 100%;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+        .field--name-field-equipment {
+          float: none;
+          border: 1px solid rgb(221, 231, 233);
+          .field__items {
+            margin: auto;
+          }
+        }
+        .field--name-field-location-address::before {
+          content:"";
+        }
+        .field--name-field-location-address {
+          display: block;
+          width: 100%;
+          height: auto;
+          iframe {
+            padding: 5px;
+            max-width: 522px;
+            width: 100%;
+          }
+          .simple-gmap-address {
+            width: 100%;
+            display: block;
+            text-align: center;
+            border: 0;
+            margin: 10px 0;
+            &:hover {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
