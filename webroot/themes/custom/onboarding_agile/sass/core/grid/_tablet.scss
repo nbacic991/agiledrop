@@ -1,0 +1,123 @@
+// ========================================
+//
+// @file _tablet.scss
+// Main grid classes
+//
+// ========================================
+
+@media  (max-width: 768px) {
+
+  /**************
+  *
+  * Front page
+  *
+  **************/
+  .layout-container {
+    .highlighted {
+      .region-highlighted {
+        #block-onboardingheaderleft {
+          display: none;
+        }
+        #block-onboardingheaderright1 {
+          margin: auto;
+        }
+        #block-onboardingheaderright2 {
+          border-right: none;
+          margin: auto;
+        }
+      }
+    }
+    .navigation {
+      .region-primary-menu {
+        nav {
+          display: none;
+        }
+      }
+    }
+    .caption p:nth-child(1) {
+      margin-top: 5px;
+    }
+    .layout-page-content {
+      .region-content {
+        width: 100%;
+        padding: 0 10px;
+        #block-onboarding-agile-content {
+          flex-basis: 100%;
+          margin: auto;
+          .views-field-field-home-page-intro {
+            img {
+              width: 100%;
+            }
+          }
+        }
+        #block-views-block-front-page-services-block-1 {
+          flex-basis: 100%;
+        }
+      }
+    }
+    .featured-events {
+      .region-featured-one {
+        width: 100%;
+        padding: 0 10px 30px 10px;
+        .view-latest-events {
+
+        }
+      }
+    }
+    .featured-companies {
+      .region-featured-two {
+        width: 100%;
+        padding: 0 10px 30px 10px;
+        &::before {
+          right: 100px;
+        }
+        &::after {
+          right: 40px;
+        }
+        .view-id-featured_companies {
+          .view-content {
+            .views-row {
+              flex-basis: 50%;
+              margin-bottom: 10px;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .featured-service {
+      .region-featured-three {
+        width: 90%;
+      }
+    }
+    .site-footer {
+      width: 100%;
+      .site-footer__top {
+        width: 90%;
+        padding: 50px 10px;
+        .region-footer-first {
+          flex-basis: 30%;
+        }
+        .region-footer-second {
+          flex-basis: 70%;
+        }
+        .region-footer-third {
+          flex-basis: 50%;
+        }
+        .region-footer-fourth {
+          flex-basis: 50%;
+        }
+      }
+      .site-footer__bottom {
+        padding-bottom: 10px;
+        &::before {
+          content: none;
+        }
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+}
