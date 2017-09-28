@@ -119,5 +119,89 @@
       }
     }
   }
+  /**************
+   *
+   * Companies page
+   *
+   **************/
+  .layout-container {
+    .region-header {
+      #block-companyheader,
+      #block-locationsheader,
+      #block-eventheader {
+        .field--name-body {
+          p:nth-child(2) {
+            margin-top: 2px;
+            font-size: 2.3em;
+          }
+          p:nth-child(3) {
+            font-size: 1em;
+            font-weight: 400;
+            width: 80%;
+          }
+        }
+      }
+    }
+    .exposed-filters {
+      height: auto;
+      .region-header-bottom {
+        display: block;
+        #block-companies,
+        #block-locations,
+        #block-events {
+          text-align: center;
+          .field--name-body::after {
+            content:"";
+          }
+          .field--name-body {
+            padding: 0;
+            border: 0;
+            p:nth-child(1) {
+              span {
+                font-size: 25px;
+              }
+            }
+            p:nth-child(2) {
+              font-size: 20px;
+            }
+          }
+        }
+        #block-exposedformcompany-filterpage-company-filter,
+        #block-exposedformlocations-filterpage-1,
+        #block-exposedformevents-filterpage-1 {
+          width: 100%;
+          form {
+            text-align: center;
+            .form--inline {
+              .form-item {
+                float: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .companies-content,
+    .locations-content,
+    .events-content {
+      .region-content {
+        padding: 0 10px;
+        .view-header {
+          text-align: center;
+        }
+        #block-onboarding-agile-content {
+          .view-id-company {
+            .view-content {
+              .views-row {
+                .views-field-view-node {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
