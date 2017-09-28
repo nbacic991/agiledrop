@@ -203,11 +203,7 @@
       }
     }
   }
-  /**************
-   *
-   * Single company page
-   *
-   **************/
+
   /**************
    *
    * Single company page
@@ -216,9 +212,6 @@
   .sidebar-second .main-section {
     display: block !important;
     padding: 0 10px;
-    //#block-onboarding-agile-views-block-events-by-company-block-events-by-company {
-    //  display: flex;
-    //}
     .view-id-events_by_company {
       width: 100%;
       .views-row {
@@ -283,5 +276,27 @@
       }
     }
   }
+  /**************
+   *
+   * Events page
+   *
+   **************/
+  .layout-container {
+    .region-content {
+      .view-id-events {
+        .view-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .views-row {
+            margin-bottom: 5px;
+            .views-field-field-description {
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 
 }
