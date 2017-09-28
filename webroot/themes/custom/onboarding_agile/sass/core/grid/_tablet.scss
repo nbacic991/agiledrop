@@ -1,0 +1,398 @@
+// ========================================
+//
+// @file _tablet.scss
+// Main grid classes
+//
+// ========================================
+
+@media  (min-width: 480px) and (max-width: 768px) {
+
+  /**************
+  *
+  * Front page
+  *
+  **************/
+  .layout-container {
+    .highlighted {
+      .region-highlighted {
+        #block-onboardingheaderleft {
+          display: none;
+        }
+        #block-onboardingheaderright1 {
+          margin: auto;
+        }
+        #block-onboardingheaderright2 {
+          border-right: none;
+          margin: auto;
+        }
+      }
+    }
+    .navigation {
+      .region-primary-menu {
+        nav {
+          display: none;
+        }
+      }
+    }
+    .caption p:nth-child(1) {
+      margin-top: 5px;
+    }
+    .layout-page-content {
+      .region-content {
+        width: 100%;
+        padding: 0 10px;
+        #block-onboarding-agile-content {
+          flex-basis: 100%;
+          margin: auto;
+          .views-field-field-home-page-intro {
+            img {
+              width: 100%;
+            }
+          }
+        }
+        #block-views-block-front-page-services-block-1 {
+          flex-basis: 100%;
+        }
+      }
+    }
+    .featured-events {
+      .region-featured-one {
+        width: 100%;
+        padding: 0 10px 30px 10px;
+        .view-latest-events {
+
+        }
+      }
+    }
+    .featured-companies {
+      .region-featured-two {
+        width: 100%;
+        padding: 0 10px 30px 10px;
+        &::before {
+          right: 100px;
+        }
+        &::after {
+          right: 40px;
+        }
+        .view-id-featured_companies {
+          .view-content {
+            .views-row {
+              flex-basis: 50%;
+              margin-bottom: 10px;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .featured-service {
+      .region-featured-three {
+        width: 90%;
+      }
+    }
+    .site-footer {
+      width: 100%;
+      .site-footer__top {
+        width: 90%;
+        padding: 50px 10px;
+        .region-footer-first {
+          flex-basis: 30%;
+        }
+        .region-footer-second {
+          flex-basis: 70%;
+        }
+        .region-footer-third {
+          flex-basis: 50%;
+        }
+        .region-footer-fourth {
+          flex-basis: 50%;
+        }
+      }
+      .site-footer__bottom {
+        padding-bottom: 10px;
+        &::before {
+          content: none;
+        }
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+  /**************
+   *
+   * Companies page
+   *
+   **************/
+  .layout-container {
+    .region-header {
+      #block-companyheader,
+      #block-locationsheader,
+      #block-eventheader {
+        .field--name-body {
+          p:nth-child(2) {
+            margin-top: 2px;
+            font-size: 2.3em;
+          }
+          p:nth-child(3) {
+            font-size: 1em;
+            font-weight: 400;
+            width: 80%;
+          }
+        }
+      }
+    }
+    .exposed-filters {
+      height: auto;
+      .region-header-bottom {
+        display: block;
+        #block-companies,
+        #block-locations,
+        #block-events {
+          text-align: center;
+          .field--name-body::after {
+            content:"";
+          }
+          .field--name-body {
+            padding: 0;
+            border: 0;
+            p:nth-child(1) {
+              span {
+                font-size: 25px;
+              }
+            }
+            p:nth-child(2) {
+              font-size: 20px;
+            }
+          }
+        }
+        #block-exposedformcompany-filterpage-company-filter,
+        #block-exposedformlocations-filterpage-1,
+        #block-exposedformevents-filterpage-1 {
+          width: 100%;
+          form {
+            text-align: center;
+            .form--inline {
+              .form-item {
+                float: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .companies-content,
+    .locations-content,
+    .events-content {
+      .region-content {
+        padding: 0 10px;
+        .view-header {
+          text-align: center;
+        }
+        #block-onboarding-agile-content {
+          .view-id-company {
+            .view-content {
+              .views-row {
+                .views-field-view-node {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /**************
+   *
+   * Single company page
+   *
+   **************/
+  .sidebar-second .main-section {
+    display: block !important;
+    padding: 0 10px;
+    .view-id-events_by_company {
+      width: 100%;
+      .views-row {
+        display: inline-block;
+      }
+    }
+    .region-content {
+      .node__content {
+        .field--name-field-company-industry,
+        .field--name-field-company-website,
+        .field--name-field-company-phone,
+        .field--name-field-company-mail {
+          display: block;
+          width: 100%;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+        .field--name-field-company-address::before {
+          content:"";
+        }
+        .field--name-field-company-address {
+          display: block;
+          iframe {
+            padding: 5px;
+            width: 100%;
+          }
+          .simple-gmap-address {
+            width: 100%;
+            display: block;
+            text-align: center;
+            border: 0;
+            margin: 10px 0;
+            &:hover {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+    .region-sidebar-second {
+      text-align: center;
+      .view-id-events_by_company {
+        .views-field-title,
+        .views-field-field-start-date,
+        .views-field-field-event-image {
+          padding-left: 0;
+        }
+        .views-field-title {
+          border: 0;
+          a {
+            border-left: 5px solid #29c1e1;
+            padding-bottom: 5px;
+            padding-left: 10px;
+          }
+        }
+        .views-field-field-event-image {
+          margin-bottom: 10px;
+          img {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  /**************
+   *
+   * Events page
+   *
+   **************/
+  .layout-container {
+    .region-content {
+      .view-id-events {
+        .view-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .views-row {
+            margin-bottom: 5px;
+            .views-field-field-description {
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /**************
+   *
+   * Single event page
+   *
+   **************/
+  .sidebar-first .main-section {
+    display: block !important;
+    .layout-sidebar-first {
+      margin: 0 20px;
+    }
+    .region-content {
+      .node--type-event {
+        .field--name-field-start-date,
+        .field--name-field-end-date {
+          padding: 0;
+          display: inline-block;
+          width: calc(50% - 10px);
+          margin-left: 5px;
+        }
+        .field--name-field-description {
+          padding: 0 10px 20px 10px;
+        }
+      }
+    }
+  }
+
+  /**************
+   *
+   * Locations page
+   *
+   **************/
+  .layout-container {
+    .locations-content {
+      .region-content {
+        .view-content {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    }
+  }
+
+  /**************
+   *
+   * Single location page
+   *
+   **************/
+  .layout-container {
+    .view-id-events_by_location {
+      width: 100%;
+      margin-bottom: 10px;
+      .views-row {
+        display: inline-block;
+      }
+    }
+    .region-content {
+      .node__content {
+        .field--name-field-equipment,
+        .field--name-field-location-website,
+        .field--name-field-location-phone,
+        .field--name-field-location-email {
+          display: block;
+          width: 100%;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+        .field--name-field-equipment {
+          float: none;
+          border: 1px solid rgb(221, 231, 233);
+          .field__items {
+            margin: auto;
+          }
+        }
+        .field--name-field-location-address::before {
+          content:"";
+        }
+        .field--name-field-location-address {
+          display: block;
+          width: 100%;
+          height: auto;
+          iframe {
+            padding: 5px;
+            width: 100%;
+          }
+          .simple-gmap-address {
+            width: 100%;
+            display: block;
+            text-align: center;
+            border: 0;
+            margin: 10px 0;
+            &:hover {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
