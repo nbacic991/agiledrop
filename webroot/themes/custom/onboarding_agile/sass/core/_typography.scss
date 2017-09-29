@@ -5,6 +5,22 @@
 //
 // ========================================
 
+@font-face {
+  font-family: 'Karla';
+  src: url('../../assets/fonts/Karla-Regular.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'Karla-italic';
+  src: url('../../assets/fonts/Karla-Italic.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'Karla-bold';
+  src: url('../../assets/fonts/Karla-BoldItalic.ttf')  format('truetype')
+}
+
+body {
+  font-family: Karla;
+}
 
 p {
 
