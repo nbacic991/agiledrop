@@ -47,8 +47,8 @@ services:
   nginx:
     image: wodby/drupal-nginx:8-1.13-2.4.4
     restart: unless-stopped
-    ports:
-      - "8100:80"
+#    ports:
+#      - "8100:80"
     depends_on:
       - php
     environment:
