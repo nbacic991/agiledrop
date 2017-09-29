@@ -17,6 +17,9 @@
   * Front page
   *
   **************/
+  html {
+    font-size: 0.8em;
+  }
 
   .layout-container {
     .highlighted {
@@ -245,6 +248,8 @@
         }
         .field--name-field-company-address {
           display: block;
+          width: 100%;
+          height: auto;
           iframe {
             padding: 5px;
             max-width: 522px;
@@ -418,26 +423,28 @@
       display: block !important;
     }
   }
-  nav {
-    .menu {
-      display: none;
-    }
-    &.open {
+  .region-primary-menu {
+    nav {
       .menu {
-        margin-top: 20px !important;
-        display: block !important;
-        li {
+        display: none;
+      }
+      &.open {
+        .menu {
+          margin-top: 20px !important;
           display: block !important;
-          padding-bottom: 10px !important;
-          a {
-            border-bottom: 2px solid black;
-          }
-          &:last-child {
-            padding-bottom: 0;
-            border: 0;
-          }
-          a {
+          li {
+            display: block !important;
+            padding-bottom: 10px !important;
+            a {
+              border-bottom: 2px solid black;
+            }
+            &:last-child {
+              padding-bottom: 0;
+              border: 0;
+            }
+            a {
 
+            }
           }
         }
       }
@@ -459,6 +466,7 @@
       height: 9px;
       width: 100%;
       background: rgb(41, 193, 225);
+      border-radius: 5px;
       opacity: 1;
       transition: .3s;
       &:nth-child(2) {
@@ -487,7 +495,7 @@
 // Portrait
 //
 // ========
-@media  (min-width: 420px) and (max-width: 768px) {
+@media  (min-width: 420px) and (max-width: 770px) {
 
   /**************
   *
@@ -737,6 +745,8 @@
         }
         .field--name-field-company-address {
           display: block;
+          width: 100%;
+          height: auto;
           iframe {
             padding: 5px;
             width: 100%;
@@ -840,7 +850,7 @@
     .locations-content {
       .region-content {
         .view-content {
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
         }
       }
     }
@@ -1155,6 +1165,8 @@
         }
         .field--name-field-company-address {
           display: block;
+          width: 100%;
+          height: auto;
           iframe {
             padding: 5px;
             width: 100%;
@@ -1530,6 +1542,8 @@
         }
         .field--name-field-company-address {
           display: block;
+          width: 100%;
+          height: auto;
           iframe {
             padding: 5px;
             width: 100%;
