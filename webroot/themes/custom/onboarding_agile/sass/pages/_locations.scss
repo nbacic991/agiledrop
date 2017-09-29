@@ -109,7 +109,8 @@
         font-size: 20px;
       }
       .field__items {
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         .field__item {
@@ -192,7 +193,6 @@
       iframe {
         padding: 2px 0 2px 10px;
         order: 1;
-        height: 100%;
       }
     }
   }

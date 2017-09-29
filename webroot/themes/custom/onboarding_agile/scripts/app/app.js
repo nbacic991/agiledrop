@@ -5,7 +5,7 @@
     // });
     $(document).ready(function(){
         $('.mobile-menu').click(function(){
-            $('nav').toggleClass('open');
+            $('#block-onboarding-agile-main-menu, #block-onboarding-agile-account-menu').toggleClass('open');
         });
     });
 
