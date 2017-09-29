@@ -10,8 +10,7 @@
 @import 'system';
 
 // Import responsive behaviour
-@import 'small-screen';
-@import 'tablet';
+@import 'responsive';
 
 .container {
   @include container-fixed;
