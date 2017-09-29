@@ -5,12 +5,13 @@
 //
 // ========================================
 
+// Import responsive behaviour
+@import 'responsive';
+
 // Import necessary mixins
 @import 'framework';
 @import 'system';
 
-// Import responsive behaviour
-@import 'responsive';
 
 .container {
   @include container-fixed;

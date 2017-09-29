@@ -317,14 +317,19 @@
    **************/
   .sidebar-first .main-section {
     display: block !important;
+    .layout-sidebar-first {
+      margin: 0 10px;
+    }
     .region-content {
       .node--type-event {
         .field--name-field-start-date,
         .field--name-field-end-date {
           padding: 0;
           display: block;
-          width: 60%;
           margin: auto;
+          width: 80%;
+          text-align: center;
+          border-left: 0;
         }
         .field--name-field-description {
           padding: 0 10px;
@@ -489,6 +494,9 @@
   * Front page
   *
   **************/
+  html {
+    font-size: 0.8em;
+  }
   .layout-container {
     .highlighted {
       .region-highlighted {
@@ -535,8 +543,14 @@
       .region-featured-one {
         width: 100%;
         padding: 0 10px 30px 10px;
-        .view-latest-events {
-
+        .view-id-latest_events {
+          .view-content {
+            flex-wrap: wrap;
+            .views-row {
+              flex-basis: 45%;
+              margin-bottom: 5px;
+            }
+          }
         }
       }
     }
@@ -545,15 +559,15 @@
         width: 100%;
         padding: 0 10px 30px 10px;
         &::before {
-          right: 100px;
+          display: none;
         }
         &::after {
-          right: 40px;
+          display: none;
         }
         .view-id-featured_companies {
           .view-content {
             .views-row {
-              flex-basis: 50%;
+              flex-basis: 100%;
               margin-bottom: 10px;
               padding: 0;
             }
@@ -569,13 +583,17 @@
     .site-footer {
       width: 100%;
       .site-footer__top {
-        width: 90%;
         padding: 50px 10px;
+        display: block;
+        text-align: center;
         .region-footer-first {
           flex-basis: 30%;
         }
         .region-footer-second {
           flex-basis: 70%;
+          .menu {
+            text-align: center;
+          }
         }
         .region-footer-third {
           flex-basis: 50%;
@@ -796,10 +814,15 @@
       .node--type-event {
         .field--name-field-start-date,
         .field--name-field-end-date {
-          padding: 0;
-          display: inline-block;
-          width: calc(50% - 10px);
-          margin-left: 5px;
+          display: block;
+          width: 80%;
+          padding: 0 0 5px 5px;
+          margin: auto;
+          text-align: center;
+          border-left: 0;
+          .field__label {
+            padding-left: 5px;
+          }
         }
         .field--name-field-description {
           padding: 0 10px 20px 10px;
@@ -914,9 +937,18 @@
         }
       }
     }
+    .navigation {
+      .region-primary-menu {
+        width: 100%;
+        flex-wrap: nowrap;
+        #block-onboarding-agile-branding {
+          flex-basis: auto;
+        }
+      }
+    }
     .layout-page-content {
       .region-content {
-        width: 90%;
+        width: 100%;
         justify-content: space-between;
         #block-onboarding-agile-content {
           margin-right: 0;
@@ -939,6 +971,8 @@
     }
     .featured-events {
       .region-featured-one {
+        width: 100%;
+        padding: 0 10px;
         .view-latest-events {
           .view-content {
             .views-row {
@@ -953,6 +987,7 @@
     }
     .featured-companies {
       .region-featured-two {
+        width: 100%;
         &::before {
           display: none;
         }
@@ -966,6 +1001,12 @@
             }
           }
         }
+      }
+    }
+    .featured-service {
+      padding: 0 10px;
+      .region-featured-three {
+        width: 100%;
       }
     }
     .site-footer {
