@@ -417,6 +417,11 @@
 // ========
 @media (max-width: 768px) {
 
+  body.open {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+  }
   .navigation {
     position: relative;
     .region-primary-menu {
