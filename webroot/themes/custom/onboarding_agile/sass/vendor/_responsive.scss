@@ -459,16 +459,42 @@
       margin-bottom: 10px !important;
     }
   }
+
+  @keyframes slide--down {
+    0% {
+      max-height: 0;
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+    100% {
+      max-height: none;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
   .region-primary-menu {
     nav {
+
       .menu {
         display: none;
+        //animation: slide--down .5s ease-out;
       }
+      .menu--account {
+        position: absolute;
+        bottom: 0;
+      }
+
       &.open {
+
+        &.menu--main {
+          animation: slide--down .5s ease-out;
+        }
         .menu {
           display: block !important;
           margin-left: 0;
           z-index: 1;
+
           li {
             display: block !important;
             padding-bottom: 10px !important;
@@ -482,6 +508,8 @@
               border: 0;
             }
           }
+
+
         }
       }
     }
