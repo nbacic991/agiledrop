@@ -75,6 +75,16 @@ h6 {
 ul {
 
   li {
+    /*
+     * Default style for li
+     * Uncomment to use it
+     */
+
+    //&:before {
+    //  font-family: 'FontAwesome';
+    //  content: '\f00c';
+    //  margin:0 5px 0 -15px;
+    //}
   }
 
   &:last-child {
@@ -92,3 +102,12 @@ ol {
   }
 }
 
+ul {
+
+  li {
+
+    content:"\f00c"
+
+  }
+
+}
