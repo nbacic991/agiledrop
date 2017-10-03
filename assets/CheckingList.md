@@ -163,6 +163,8 @@
 
         -   For unordered list (&lt;ul&gt;) use custom check icon (img
             > or FontAwesome) instead of default list style type.
+            
+            - Done.
 
 -   After you’re done
 
