@@ -145,6 +145,7 @@
         > entire site and leave only navigation scrollable by Y axis.
         > Also try to apply overlay to entire site except navigation
         > with white rgb background with alpha channel set to 80%.
+        - Done.
 
     -   Make CTA buttons as extendables, so you could reuse them
         > anywhere else in the code.
@@ -155,6 +156,7 @@
     -   Apply some rule only for mobile device. For example set
         > background to black on header. This must be done without media
         > breakpoint technique. You should target mobile devices only!
+        - Done.
 
     -   Set default stylings for headings (h1,h2,...), paragraphs and
         > lists (ul,ol).
