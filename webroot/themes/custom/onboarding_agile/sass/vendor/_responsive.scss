@@ -21,6 +21,24 @@
     font-size: 0.8em;
   }
 
+  body.open {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    main,
+    header,
+    .highlighted,
+    .featured-events,
+    .featured-companies,
+    .featured-service,
+    .exposed-filters,
+    footer {
+      opacity: 0.2;
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+    }
+  }
+
   .layout-container {
     .highlighted {
       .region-highlighted {
@@ -430,8 +448,9 @@
     .exposed-filters,
     footer {
       opacity: 0.2;
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
     }
-
   }
   .navigation {
     //position: relative;
@@ -449,21 +468,18 @@
         .menu {
           display: block !important;
           margin-left: 0;
-          background-color: rgb(247, 147, 29);
           z-index: 1;
           li {
             display: block !important;
             padding-bottom: 10px !important;
             a {
-              font-size: 30px;
+              background-color: #FFF;
+              font-size: 22px;
               border-bottom: 2px solid black;
             }
             &:last-child {
               padding-bottom: 0;
               border: 0;
-            }
-            a {
-
             }
           }
         }
@@ -474,7 +490,7 @@
   .mobile-menu {
     display: block;
     position: absolute;
-    top: 5px;
+    top: 10px;
     z-index: 9999;
     width: 50px;
     height: 50px;
