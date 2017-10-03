@@ -421,9 +421,20 @@
     position: fixed;
     overflow-y: scroll;
     width: 100%;
+    main,
+    header,
+    .highlighted,
+    .featured-events,
+    .featured-companies,
+    .featured-service,
+    .exposed-filters,
+    footer {
+      opacity: 0.2;
+    }
+
   }
   .navigation {
-    position: relative;
+    //position: relative;
     .region-primary-menu {
       display: block !important;
       margin-bottom: 10px !important;
@@ -436,12 +447,15 @@
       }
       &.open {
         .menu {
-          margin-top: 20px !important;
           display: block !important;
+          margin-left: 0;
+          background-color: rgb(247, 147, 29);
+          z-index: 1;
           li {
             display: block !important;
             padding-bottom: 10px !important;
             a {
+              font-size: 30px;
               border-bottom: 2px solid black;
             }
             &:last-child {
