@@ -616,7 +616,7 @@
 // Portrait
 //
 // ========
-@media  (min-width: 420px) and (max-width: 770px) {
+@media  (min-width: 420px) and (max-width: 768px) {
 
   /**************
   *
@@ -915,6 +915,30 @@
    * Events page
    *
    **************/
+  .iOS {
+    .region-content {
+      .view-id-events {
+        .view-content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .views-row {
+            flex-wrap: wrap;
+            width: 48%;
+            margin-bottom: 5px;
+            .views-field-field-event-image {
+              img {
+                width: 100%;
+              }
+            }
+            .views-field-field-description {
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
   .layout-container {
     .region-content {
       .view-id-events {
@@ -1381,6 +1405,19 @@
    * Locations page
    *
    **************/
+  .iOS {
+    .region-content {
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .views-row {
+          width: 48%;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
   .layout-container {
     .locations-content {
       .region-content {
@@ -1714,6 +1751,26 @@
    * Events page
    *
    **************/
+  .iOS {
+    .region-content {
+      .view-id-events {
+        .view-content {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .views-row {
+            flex-wrap: wrap;
+            width: 33%;
+            margin-bottom: 5px;
+            .views-field-field-description {
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
   .layout-container {
     .region-content {
       .view-id-events {
@@ -1758,6 +1815,18 @@
    * Locations page
    *
    **************/
+  .iOS {
+    .region-content {
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .views-row {
+          width: 33%;
+        }
+      }
+    }
+  }
   .layout-container {
     .locations-content {
       .region-content {

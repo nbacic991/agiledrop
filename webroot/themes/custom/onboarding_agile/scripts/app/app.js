@@ -24,6 +24,10 @@
         else {
             $('.highlighted').toggleClass('no-phone');
         }
+
+        if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+            $('.events-content, .locations-content').toggleClass('iOS');
+        }
     });
 
 
