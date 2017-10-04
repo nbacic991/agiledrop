@@ -57,15 +57,14 @@
 
     -   If you find any element that isn’t in design, you can leave it.
         > Design is more as a guideline for this example.
-
-    -   For all the icons in design you can use FontAwesome library     - Done.
+    -   For all the icons in design you can use FontAwesome library     
+        - Done.
 
 -   Mobile theming
 
     -   We don’t have mobile design, so you make what you think will
         > be best. You will not always get a mobile design, so now it’s
         > up to you.
-        
         - Done.
 
 -   First you need to theme main navigation. Use CSS media breakpoints
@@ -77,7 +76,6 @@
     > second level. Navigation must be position fixed. Don’t be afraid
     > to import other libraries that you know and you’ve worked with -
     > for example FontAwesome.
-    
     - Done.
 
 
@@ -87,59 +85,57 @@
 
         -   Slick JS
             > [*http://kenwheeler.github.io/slick/*](http://kenwheeler.github.io/slick/)
-            
-            - I've used Slick slider.
+           - I've used Slick slider.
 
         -   OWL Carousel
             > [*https://github.com/OwlFonk/OwlCarousel*](https://github.com/OwlFonk/OwlCarousel)
 
     -   Slider must be responsive, all texts and images must be visible
         > on mobile devices.
-        
         - It is responsive.
 
 -   Open provided Companies.afdesign file
 
     -   You will style company node list by this design.
-
     -   For company node detail use
+        - Done.
 
 -   Event node
 
     -   Style event list like it is on Events.afdesign
-
     -   If there will be more than 4 events, apply one of the carousels
         > you’ve used on homepage slider and use prev/next
-        > navigation type.
-
+        > navigation type. 
+        - I don't understand this. Original design has 6 events on page, how should I add slider
+            if there is more than 4 events ? 
+            
     -   For event detail use the design Events\_page.afdesign and
         > theme it.
-        
         - Done.
 
     -   All blocks must be same heights. Shorten text and titles using
         > CSS ellipsis or some other method that you know, if there will
         > be too many characters displayed.
+        - Added CSS ellipsis but didn't add same height to every block.
         
 
 -   Location node
 
     -   TODO: Boštjan poglej ker dizajn bi bil za tole najbolj
         > primeren? :)
+        - I've designed Locations using original Locations.png design.
 
 -   Footer
 
     -   Style footer by the design, create CSS3 pseudo elements for
         > triangle backgrounds on bottom. Change opacity of this
         > elements for mobile devices and set smaller size.
-        
         - I've removed them from mobile devices.
 
 -   Global theming
 
-    -   Create simple CSS3 hover transition for all CTA buttons. 
-    
-    - Done.
+    -   Create simple CSS3 hover transition for all CTA buttons.
+        - Done
 
     -   When mobile navigation will be triggered, disable scroll on
         > entire site and leave only navigation scrollable by Y axis.
@@ -153,6 +149,7 @@
 
     -   Make sure you will set all container widths, colors, etc.
         > globally accessible and that they could be changed globally.
+        - Not yet
 
     -   Apply some rule only for mobile device. For example set
         > background to black on header. This must be done without media
@@ -161,11 +158,11 @@
 
     -   Set default stylings for headings (h1,h2,...), paragraphs and
         > lists (ul,ol).
+        - Not yet
 
         -   For unordered list (&lt;ul&gt;) use custom check icon (img
             > or FontAwesome) instead of default list style type.
-            
-            - Done.
+        - Done.
 
 -   After you’re done
 
@@ -173,3 +170,4 @@
         > code adapts to new width. (This is what can happen in real
         > life projects, when client suddenly decides to have wider
         > site, or maybe you just set it wrong...)
+        - Not yet.
