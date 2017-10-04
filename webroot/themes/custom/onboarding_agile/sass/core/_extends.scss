@@ -36,6 +36,8 @@
 /*
  * Added css ellipsis that is shortening text
  * and adds ... at the end of the line.
+ *
+ * Uncomment to see that change.
  */
 
 //.block {
@@ -53,4 +55,14 @@
 //    overflow: hidden;
 //    text-overflow: ellipsis;
 //  }
+//}
+
+/*
+ * Making all containers with same width
+ * Uncomment to see that change.
+ */
+//
+//div[class*="container"] {
+//  background-color: #b4d7f0;
+//  width: 100%;
 //}
