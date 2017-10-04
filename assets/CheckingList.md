@@ -145,11 +145,11 @@
 
     -   Make CTA buttons as extendables, so you could reuse them
         > anywhere else in the code.
-        - Done
+        - Done.
 
     -   Make sure you will set all container widths, colors, etc.
         > globally accessible and that they could be changed globally.
-        - Not yet
+        - Done.
 
     -   Apply some rule only for mobile device. For example set
         > background to black on header. This must be done without media
