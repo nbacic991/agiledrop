@@ -158,7 +158,7 @@
 
     -   Set default stylings for headings (h1,h2,...), paragraphs and
         > lists (ul,ol).
-        - Not yet
+        - Done.
 
         -   For unordered list (&lt;ul&gt;) use custom check icon (img
             > or FontAwesome) instead of default list style type.

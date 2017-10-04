@@ -26,11 +26,13 @@ p {
 
 	&:last-child {
 	  margin-bottom: 0;
+      padding-bottom: 0;
 	}
 }
 
 a {
   transition: 0.4s;
+  text-decoration: none;
 }
 
 h1,
@@ -41,7 +43,7 @@ h5,
 h6 {
 
   a {
-    color: inherit;
+    color: #fff;
 
     &:hover {
     }
@@ -93,6 +95,16 @@ ul {
 }
 
 ol {
+   /*
+    * Default style for li
+    * Uncomment to use it
+    */
+
+  //&:before {
+  //  font-family: 'FontAwesome';
+  //  content: '\f05d';
+  //  margin:0 5px 0 -15px;
+  //}
 
   li {
   }
@@ -102,12 +114,3 @@ ol {
   }
 }
 
-ul {
-
-  li {
-
-    content:"\f00c"
-
-  }
-
-}
