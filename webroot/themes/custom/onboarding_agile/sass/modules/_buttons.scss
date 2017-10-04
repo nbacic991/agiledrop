@@ -8,3 +8,31 @@
 input[type=submit] {
 
 }
+
+/*
+ * Extendable CTA button styling
+ */
+
+// Orange button
+.u-cta-o {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: rgb(247, 147, 29);
+  &:hover {
+    background-color: rgb(165, 98, 18);
+  }
+}
+
+// Blue button
+.u-cta-b {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: rgb(41, 193, 225);
+  &:hover {
+    background-color: rgb(23, 113, 132);
+  }
+}
