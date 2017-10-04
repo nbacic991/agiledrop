@@ -149,6 +149,7 @@
 
     -   Make CTA buttons as extendables, so you could reuse them
         > anywhere else in the code.
+        - Done
 
     -   Make sure you will set all container widths, colors, etc.
         > globally accessible and that they could be changed globally.
